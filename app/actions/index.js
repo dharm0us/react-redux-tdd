@@ -1,8 +1,9 @@
 import {INCREMENT_COUNT} from '../components/constants/actionTypes.js'
 
-function incrementCount() {
+function addToCart(id) {
 return{
-	type: INCREMENT_COUNT
+	type: 'ADD_TO_CART',
+	payload: id 
 }
 }
-export {incrementCount}
+export {addToCart}
